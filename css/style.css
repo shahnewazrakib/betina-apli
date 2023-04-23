@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loader-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.loader {
+    border: 8px solid #e7e7e7;
+    border-top: 8px solid #347cdb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+.loader-container.disabled {
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.containerFluid {
+    width: 300px;
+    height: 600px;
+    border: 1px solid #CDCDCD;
+    text-align: center;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 21px;
+}
+
+.cfp1 {
+    width: 300px;
+    height: 325px;
+    background-image: url('../images/base.png');
+    position: relative;
+    z-index: 99;
+    animation-name: anmcfp1;
+    animation-duration: 1s;
+}
+
+.cfp1 p {
+    margin-bottom: 0px;
+}
+
+.logoImg {
+    margin-bottom: 25px;
+}
+
+.learnMore {
+    margin-top: 15px;
+    padding: 9px 24px 12px 34px;
+    background: #323DCA;
+}
+
+.rounded {
+    background-image: url('../images/shape1.png');
+    position: relative;
+    width: 87px;
+    height: 87px;
+    margin-top: 81px;
+    padding-top: 24px;
+    line-height: 1;
+}
+
+.img1 {
+    position: relative;
+    top: 40px;
+}
+
+.img2 {
+    position: relative;
+    top: 40px;
+}
+
+.img4 {
+    margin-top: -80px;
+    margin-left: 117px;
+}

@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+.form-group label {
+    font-family: 'Inter';
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    font-family: 'Poppins';
+    padding: 10px;
+    font-size: 15px;
+}
+
+.btn {
+    font-family: 'Inter';
+    padding: 5px 20px;
+}
+
+aside {
+    background-color: #353C42;
+    width: 15%;
+}
+
+.profile {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    border-color: rgba(255, 255, 255, 0.39) !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.profile i {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: white;
+    color: #353C42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside .link {
+    font-family: "Inter";
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+aside .link i,
+aside .link label {
+    cursor: pointer;
+}
+
+
+aside .link.active {
+    background-color: #306DF8;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.content_box {
+    width: 85%;
+    margin-left: auto;
+}
+
+th {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+td {
+    font-family: "Inter";
+    font-size: 14px;
+    text-align: center;
+}
+
+td a,
+td button {
+    text-decoration: none;
+    font-size: 13px;
+    outline: none;
+    border: none;
+}
+
+.block_all_countries {
+    font-family: "Inter";
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    width: max-content;
+    text-align: center;
+
+}
+
+#status_selector_container{
+   display: inline;
+}
+
+#status_selector_container label{
+    font-family: 'Inter';
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+#status_selector{
+    display: inline;
+    width: 300px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.url-form label {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.url-form input {
+    font-family: "Poppins";
+    font-size: 14px;
+    padding: 8px;
+}
+
+.url-form input.disable {
+    background-color: rgba(129, 129, 129, 0.171);
+}
+
+.settings-form label {
+    margin-bottom: 5px;
+}
+
+.settings-form>div {
+    margin-bottom: 10px;
+}
+
+.settings-form>div label {
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-family: 'Poppins';
+    margin-bottom: 20px;
+}
+
+.url-form .btn {
+    width: max-content;
+    font-family: 'Inter';
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+p.alert {
+    padding: 6px 15px !important;
+    margin: 0 !important;
+    font-family: 'Inter' !important;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px !important;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+p.success {
+    background-color: #29a929;
+}
+
+p.error {
+    background-color: crimson;
+}
+
+button.close {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.modal-content label,
+.modal-content input,
+.modal-content select {
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.modal-content input,
+.modal-content select {
+    font-weight: 400;
+}
+
+.modal-content button {
+    font-family: "Poppins";
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 1024px){
+    #status_selector_container{
+        display: block;
+        margin-top: 20px;
+    }
+
+    #status_selector_container label{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    aside .link {
+        text-align: center;
+    }
+
+    .content_box {
+        overflow: auto;
+    }
+
+    .content_box table {
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    aside .link {
+        padding: 5px;
+        width: max-content;
+        text-align: center;
+    }
+
+    .content_box table {
+        width: 600px;
+    }
+
+    .block_all_countries{
+        display: block;
+    }
+}
